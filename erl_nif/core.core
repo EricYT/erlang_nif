@@ -1,0 +1,30 @@
+module 'core' ['append'/0,
+	       'append1'/1,
+	       'append2'/1,
+	       'module_info'/0,
+	       'module_info'/1]
+    attributes []
+'append'/0 =
+    %% Line 6
+    fun () ->
+	['a'|['b'|[1|[2]]]]
+'append1'/1 =
+    %% Line 9
+    fun (_cor0) ->
+	%% Line 10
+	[1|[2|_cor0]]
+'append2'/1 =
+    %% Line 12
+    fun (_cor0) ->
+	%% Line 13
+	call 'erlang':'++'
+	    (_cor0, [1|[2]])
+'module_info'/0 =
+    fun () ->
+	call 'erlang':'get_module_info'
+	    ('core')
+'module_info'/1 =
+    fun (_cor0) ->
+	call 'erlang':'get_module_info'
+	    ('core', _cor0)
+end

@@ -12,3 +12,6 @@ foo(A) ->
 
 min(_, _) ->
 	"nif not loaded!".
+
+test() ->
+    "hello".
