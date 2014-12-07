@@ -1,0 +1,2 @@
+complier command:
+gcc -undefined dynamic_lookup -dynamiclib complex_lib.c complex.c -o complex.so -I /usr/local/Cellar/erlang/17.1_1/lib/erlang/usr/include/
